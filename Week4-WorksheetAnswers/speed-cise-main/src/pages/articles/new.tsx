@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { FormEvent, useState } from "react";
 import formStyles from "../../../styles/Form.module.scss";
 
@@ -10,8 +9,6 @@ const NewDiscussion = () => {
   const [doi, setDoi] = useState("");
   const [summary, setSummary] = useState("");
   const [linkedDiscussion, setLinkedDiscussion] = useState("");
-
-  const router = useRouter();
 
   const submitNewArticle = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
